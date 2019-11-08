@@ -1,1 +1,7 @@
-<p>pokemon-detail works!</p>
+<div *ngIf="pokemon">
+  <div><span>Numéro: </span>{{ pokemon.numb }}</div>
+  <div>Type: {{ pokemon.type }}</div>
+  <label>
+    <input [(ngModel)]="pokemon.name" placeholder="name" />
+  </label>
+</div>
