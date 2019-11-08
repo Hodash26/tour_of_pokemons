@@ -1,0 +1,29 @@
+<!-- <div>
+  <label>
+    <input [(ngModel)]="pokemon.name" placeholder="name" />
+  </label>
+</div> -->
+
+<div *ngIf="selectedPokemon">
+  <div><span>Numéro: </span>{{ selectedPokemon.numb }}</div>
+  <div><span>Type: </span>{{ selectedPokemon.type }}</div>
+  <span class="badge">{{ selectedPokemon.numb }}</span>
+  <label>
+    <input [(ngModel)]="selectedPokemon.name" placeholder="name" />
+  </label>
+</div>
+
+<h2>List of Pokemons</h2>
+
+<div class="list">
+  <!-- <ul class="pokemons"> -->
+  <div
+    class="pokemons"
+    *ngFor="let pokemon of pokemons"
+    [class.selected]="pokemon === selectedPokemon"
+    (click)="onSelect(pokemon)">
+    <h2>{{ pokemon.numb }}</h2>
+    <h2>{{ pokemon.name | titlecase }}</h2>
+  </div>
+  <!-- </ul> -->
+</div>
