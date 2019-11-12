@@ -12,5 +12,15 @@ export const POKEMONS: Pokemon[] = [
   { id: 9, name: "Tortank", type: "Eau", numb: "N°009" },
   { id: 10, name: "Chenipan", type: "Insecte", numb: "N°010" },
   { id: 11, name: "Chrysacier", type: "Insecte", numb: "N°011" },
-  { id: 12, name: "Papylusion", type: "Insete / Vol", numb: "N°012" }
+  { id: 12, name: "Papylusion", type: "Insete / Vol", numb: "N°012" },
+  { id: 13, name: "Aspicot", type: "Insete / Poison", numb: "N°013" },
+  { id: 14, name: "Coconfort", type: "Insete / Poison", numb: "N°014" },
+  { id: 15, name: "Dardagnan", type: "Insete / Poison", numb: "N°015" },
+  { id: 16, name: "Roucool", type: "Normal / Vol", numb: "N°016" },
+  { id: 17, name: "Roucoups", type: "Normal / Vol", numb: "N°017" },
+  { id: 18, name: "Roucarnage", type: "Normal / Vol", numb: "N°018" },
+  { id: 19, name: "Rattata", type: "Normal ", numb: "N°019" },
+  { id: 20, name: "Rattatac", type: "Normal ", numb: "N°020" },
+  { id: 21, name: "Piafabec", type: "Normal / Vol", numb: "N°21" },
+
 ];
