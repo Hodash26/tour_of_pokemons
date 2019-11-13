@@ -10,17 +10,19 @@
       <h2>{{ pokemon.numb }}</h2>
       <h2>{{ pokemon.name | titlecase }}</h2>
     </a>
-    <button class="delete" title="delete pokemon"
-    (click)="delete(pokemon)">Supprimer</button>
+    <button class="delete" title="delete pokemon" (click)="delete(pokemon)">
+      Supprimer
+    </button>
   </div>
 </div>
 
 <div>
-  <label>Nom du pokemon:
+  <label
+    >Nom du pokemon:
     <input #pokemonName />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(pokemonName.value); pokemonName.value=''">
+  <button (click)="add(pokemonName.value); pokemonName.value = ''">
     Ajouter
   </button>
 </div>

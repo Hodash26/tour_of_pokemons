@@ -1,9 +1,19 @@
+<div class="background">
 <div *ngIf="pokemon">
-  <div><span>Numéro: </span>{{ pokemon.numb }}</div>
-  <div>Type: {{ pokemon.type }}</div>
+  <div class="back">
+    <button (click)="goBack()">Retour</button>
+  </div>
+  <div class="infos">
+    <h2>{{ pokemon.name | uppercase }}</h2>
+    <p>Numéro: {{ pokemon.numb }}</p>
+    <p>Type: {{ pokemon.type }}</p>
+  </div>
+  <div class="pkm">
+    <img src="{{ pokemon.img }}" alt="Image de {{ pokemon.name }}" />
+  </div>
   <label>
     <input [(ngModel)]="pokemon.name" placeholder="name" />
-    <button (click)="goBack()">go back</button>
-    <button (click)="save()">save</button>
+    <button (click)="save()">Sauvegarder</button>
   </label>
+</div>
 </div>

@@ -1,0 +1,35 @@
+.back {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.back>button {
+    font-size: 20px;
+}
+
+.infos {
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 0 auto;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 40px;
+}
+
+img {
+    text-align: center;
+}
+
+.pkm {
+    text-align: center;
+}
+
+.background {
+    background-image: url(https://ih0.redbubble.net/image.201326481.6642/flat,800x800,075,f.u1.jpg);
+}
+
+label {
+    margin-left: 40%;
+}

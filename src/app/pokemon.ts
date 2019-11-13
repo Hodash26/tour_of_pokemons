@@ -3,4 +3,5 @@ export class Pokemon {
     name: string;
     type: string;
     numb: string;
+    img: string;
   }
